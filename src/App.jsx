@@ -12,6 +12,8 @@ import { Page404 } from "./pages/Page404";
 import { HomeFirstStepSecondStep } from "./pages/HomeFirstStepSecondStep";
 import { TermsService } from "./pages/TermsService";
 import { HomeFirstStepSecondStepThirdStep } from "./pages/HomeFirstStepSecondStepThirdStep";
+
+
 import { Layout } from "./layout/Layout";
 import { Layout2 } from "./layout/Layout2";
 
@@ -48,11 +50,11 @@ function App() {
         </Route>
 
         <Route path="Burger" element={<Burger /> } />
-       
-
-        <Route path="Page" element={<Page /> } />
-     
+        <Route path="Page" element={<Page /> } />    
         <Route path="*" element={<Page404 />} />
+
+        {/* <Route path="Burger/:burgerId" element={<BurgerOption /> } /> */}
+        {/* <Route path="Burger/:id/providers/:name" element={<Burger /> } /> */}
       </Routes>
     </BrowserRouter>
     {/* <form className={style.form}>
