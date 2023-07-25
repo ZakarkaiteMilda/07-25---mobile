@@ -6,7 +6,7 @@ import { Burger } from "./pages/Burger";
 import { CreateAccount } from "./pages/CreateAccount";
 import { HomeFirstStep } from "./pages/HomeFirstStep";
 import { Home } from "./pages/Home";
-import { Login } from "./pages/LogIn";
+import { LogIn } from "./pages/LogIn";
 import { Page } from "./pages/Page";
 import { Page404 } from "./pages/Page404";
 import { HomeFirstStepSecondStep } from "./pages/HomeFirstStepSecondStep";
@@ -35,6 +35,11 @@ function updateSurname(event) {
         <Route path="/FirstStep" element={<HomeFirstStep /> } />
         <Route path="/FirstStep/SecondStep" element={<HomeFirstStepSecondStep /> } />
         <Route path="/FirstStep/SecondStep/ThirdStep" element={<HomeFirstStepSecondStepThirdStep /> } />
+        <Route path="Burger" element={<Burger /> } />
+        <Route path="CreateAccount" element={<CreateAccount /> } />
+        <Route path="LogIn" element={<LogIn /> } />
+        <Route path="Page" element={<Page /> } />
+        <Route path="TermsService" element={<TermsService /> } />
 
         <Route path="*" element={<Page404 />} />
       </Routes>
