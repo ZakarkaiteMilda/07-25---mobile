@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import logo from './logo.svg';
-import { useState } from 'react';
+// import { useState } from 'react';
 import style from './App.module.css';
 import { Burger } from "./pages/Burger";
 import { CreateAccount } from "./pages/CreateAccount";
@@ -12,7 +12,8 @@ import { Page404 } from "./pages/Page404";
 import { HomeFirstStepSecondStep } from "./pages/HomeFirstStepSecondStep";
 import { TermsService } from "./pages/TermsService";
 import { HomeFirstStepSecondStepThirdStep } from "./pages/HomeFirstStepSecondStepThirdStep";
-import { Layout } from "./components/layout/Layout";
+import { Layout } from "./layout/Layout";
+import { Layout2 } from "./layout/Layout2";
 
 function App() {
 
@@ -32,17 +33,25 @@ function App() {
     <div className={style.app}>
     <BrowserRouter>
       <Routes>
+         <Route index path="/" element={<Home /> } /> 
         <Route Component={Layout}>
-        <Route index path="/" element={<Home /> } />  
-        <Route path="/FirstStep" element={<HomeFirstStep /> } />
-        <Route path="/FirstStep/SecondStep" element={<HomeFirstStepSecondStep /> } />
-        <Route path="/FirstStep/SecondStep/ThirdStep" element={<HomeFirstStepSecondStepThirdStep /> } />
+              <Route path="/FirstStep" element={<HomeFirstStep /> } />
+              <Route path="/FirstStep/SecondStep" element={<HomeFirstStepSecondStep /> } />
+              <Route path="/FirstStep/SecondStep/ThirdStep" element={<HomeFirstStepSecondStepThirdStep /> } />
         </Route>
+
+
+        <Route Component={Layout2}>
+            <Route path="CreateAccount" element={<CreateAccount /> } />
+            <Route path="LogIn" element={<LogIn /> } />
+            <Route path="TermsService" element={<TermsService /> } />
+        </Route>
+
         <Route path="Burger" element={<Burger /> } />
-        <Route path="CreateAccount" element={<CreateAccount /> } />
-        <Route path="LogIn" element={<LogIn /> } />
+       
+
         <Route path="Page" element={<Page /> } />
-        <Route path="TermsService" element={<TermsService /> } />
+     
         <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
