@@ -12,35 +12,37 @@ import { Page404 } from "./pages/Page404";
 import { HomeFirstStepSecondStep } from "./pages/HomeFirstStepSecondStep";
 import { TermsService } from "./pages/TermsService";
 import { HomeFirstStepSecondStepThirdStep } from "./pages/HomeFirstStepSecondStepThirdStep";
+import { Layout } from "./components/layout/Layout";
 
 function App() {
 
-const [name, setName] = useState('');
-const [surname, setSurname] = useState('');
-const fullname = `${name} ${surname}`.trim();
+// const [name, setName] = useState('');
+// const [surname, setSurname] = useState('');
+// const fullname = `${name} ${surname}`.trim();
 
-function updateName(event) {
-  setName(event.target.value);
-}
+// function updateName(event) {
+//   setName(event.target.value);
+// }
 
-function updateSurname(event) {
-  setSurname(event.target.value);
-}
+// function updateSurname(event) {
+//   setSurname(event.target.value);
+// }
 
   return (
     <div className={style.app}>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home /> } />
+        <Route Component={Layout}>
+        <Route index path="/" element={<Home /> } />  
         <Route path="/FirstStep" element={<HomeFirstStep /> } />
         <Route path="/FirstStep/SecondStep" element={<HomeFirstStepSecondStep /> } />
         <Route path="/FirstStep/SecondStep/ThirdStep" element={<HomeFirstStepSecondStepThirdStep /> } />
+        </Route>
         <Route path="Burger" element={<Burger /> } />
         <Route path="CreateAccount" element={<CreateAccount /> } />
         <Route path="LogIn" element={<LogIn /> } />
         <Route path="Page" element={<Page /> } />
         <Route path="TermsService" element={<TermsService /> } />
-
         <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
