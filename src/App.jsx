@@ -14,8 +14,9 @@ import { TermsService } from "./pages/TermsService";
 import { HomeFirstStepSecondStepThirdStep } from "./pages/HomeFirstStepSecondStepThirdStep";
 
 
-import { Layout } from "./layout/Layout";
-import { Layout2 } from "./layout/Layout2";
+import { Layout } from "./layout/Layout/Layout";
+import { Layout2 } from "./layout/Layout2/Layout2";
+import { Layout3 } from "./layout/Layout3/Layout3";
 
 function App() {
 
@@ -36,25 +37,22 @@ function App() {
     <BrowserRouter>
       <Routes>
          <Route index path="/" element={<Home /> } /> 
+
         <Route Component={Layout}>
               <Route path="/FirstStep" element={<HomeFirstStep /> } />
               <Route path="/FirstStep/SecondStep" element={<HomeFirstStepSecondStep /> } />
               <Route path="/FirstStep/SecondStep/ThirdStep" element={<HomeFirstStepSecondStepThirdStep /> } />
         </Route>
-
-
         <Route Component={Layout2}>
             <Route path="CreateAccount" element={<CreateAccount /> } />
             <Route path="LogIn" element={<LogIn /> } />
             <Route path="TermsService" element={<TermsService /> } />
         </Route>
-
+        <Route Component={Layout3}>
+            <Route path="Page" element={<Page /> } /> 
+        </Route>
         <Route path="Burger" element={<Burger /> } />
-        <Route path="Page" element={<Page /> } />    
         <Route path="*" element={<Page404 />} />
-
-        {/* <Route path="Burger/:burgerId" element={<BurgerOption /> } /> */}
-        {/* <Route path="Burger/:id/providers/:name" element={<Burger /> } /> */}
       </Routes>
     </BrowserRouter>
     {/* <form className={style.form}>
