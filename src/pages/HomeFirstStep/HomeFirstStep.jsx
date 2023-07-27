@@ -1,3 +1,4 @@
+import style from './HomeFirstStep.module.css';
 
 export function HomeFirstStep() {
     return (

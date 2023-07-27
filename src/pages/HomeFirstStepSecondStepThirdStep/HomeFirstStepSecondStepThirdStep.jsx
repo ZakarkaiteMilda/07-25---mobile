@@ -1,3 +1,4 @@
+import style from './HomeFirstStepSecondStepThirdStep.module.css';
 
 export function HomeFirstStepSecondStepThirdStep() {
     return (

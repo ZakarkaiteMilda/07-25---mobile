@@ -2,17 +2,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import logo from './logo.svg';
 // import { useState } from 'react';
 import style from './App.module.css';
-import { Burger } from "./pages/Burger";
-import { CreateAccount } from "./pages/CreateAccount";
-import { HomeFirstStep } from "./pages/HomeFirstStep";
-import { Home } from "./pages/Home";
-import { LogIn } from "./pages/LogIn";
-import { Page } from "./pages/Page";
-import { Page404 } from "./pages/Page404";
-import { HomeFirstStepSecondStep } from "./pages/HomeFirstStepSecondStep";
-import { TermsService } from "./pages/TermsService";
-import { HomeFirstStepSecondStepThirdStep } from "./pages/HomeFirstStepSecondStepThirdStep";
-
+import { Burger } from "./pages/Burger/Burger";
+import { CreateAccount } from "./pages/CreateAccount/CreateAccount";
+import { Home } from "./pages/Home/Home";
+import { HomeFirstStep } from "./pages/HomeFirstStep/HomeFirstStep";
+import { HomeFirstStepSecondStep } from "./pages/HomeFirstStepSecondStep/HomeFirstStepSecondStep";
+import { HomeFirstStepSecondStepThirdStep } from "./pages/HomeFirstStepSecondStepThirdStep/HomeFirstStepSecondStepThirdStep";
+import { LogIn } from "./pages/LogIn/LogIn";
+import { Page } from "./pages/Page/Page";
+import { Page404 } from "./pages/Page404/Page404";
+import { TermsService } from "./pages/TermsService/TermsService";
 
 import { Layout } from "./layout/Layout/Layout";
 import { Layout2 } from "./layout/Layout2/Layout2";

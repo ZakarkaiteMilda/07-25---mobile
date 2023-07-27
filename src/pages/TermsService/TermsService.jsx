@@ -1,3 +1,4 @@
+import style from './TermsService.module.css';
 
 export function TermsService() {
     return (
