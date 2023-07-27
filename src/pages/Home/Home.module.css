@@ -1,0 +1,28 @@
+.Page404 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.logo {
+    width: 15rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.link {
+    padding: 1rem 2rem;
+    background-color: aqua;
+    color: blue;
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+}
