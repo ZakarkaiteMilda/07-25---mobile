@@ -1,6 +1,6 @@
-import style from './Header.module.css';
+import style from './Header3.module.css';
 
-export function Header() {
+export function Header3() {
     return (
             <header>
                 <img className={style.img} src="" alt="" />
