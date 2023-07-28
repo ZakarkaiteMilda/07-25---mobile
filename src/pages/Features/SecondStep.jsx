@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import style from './SecondStep.module.css';
+import style from './Features.module.css';
 import { Button } from '../../components/Button/Button';
 
 export function SecondStep() {
