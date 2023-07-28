@@ -1,9 +1,9 @@
 import style from './Button.module.css';
 
-export function Button() {
+export function Button({ text }) {
     return (
             <div>
-                <button className={style.btn}>Button</button>
+                <button className={style.btn}>{text}</button>
             </div>
     );
 }

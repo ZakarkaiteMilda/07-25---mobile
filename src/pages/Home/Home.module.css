@@ -17,12 +17,3 @@ h1 {
 p {
     font-size: 2rem;
 }
-
-.link {
-    padding: 1rem 2rem;
-    background-color: aqua;
-    color: blue;
-    text-decoration: none;
-    font-size: 2rem;
-    border-radius: 0.5rem;
-}
