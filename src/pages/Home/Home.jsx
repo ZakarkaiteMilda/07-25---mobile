@@ -7,7 +7,8 @@ export function Home() {
         <div className={style.home}>
             <img className={style.logo} src={logo} alt="Img logo" />
             <h1>KAYAK shopping platform</h1>
-            <Link className={style.link} to='/' >Get started</Link>
+            <br />
+            <Link className={style.link} to='/FirstStep'>Get started</Link>
         </div>
     );
 }

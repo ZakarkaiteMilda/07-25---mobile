@@ -5,9 +5,9 @@ import style from './App.module.css';
 import { Burger } from "./pages/Burger/Burger";
 import { CreateAccount } from "./pages/CreateAccount/CreateAccount";
 import { Home } from "./pages/Home/Home";
-import { HomeFirstStep } from "./pages/HomeFirstStep/HomeFirstStep";
-import { HomeFirstStepSecondStep } from "./pages/HomeFirstStepSecondStep/HomeFirstStepSecondStep";
-import { HomeFirstStepSecondStepThirdStep } from "./pages/HomeFirstStepSecondStepThirdStep/HomeFirstStepSecondStepThirdStep";
+import { FirstStep } from "./pages/FirstStep/FirstStep";
+import { SecondStep } from "./pages/SecondStep/SecondStep";
+import { ThirdStep } from "./pages/ThirdStep/ThirdStep";
 import { LogIn } from "./pages/LogIn/LogIn";
 import { Page } from "./pages/Page/Page";
 import { Page404 } from "./pages/Page404/Page404";
@@ -38,9 +38,9 @@ function App() {
          <Route index path="/" element={<Home /> } /> 
 
         <Route Component={Layout}>
-              <Route path="/FirstStep" element={<HomeFirstStep /> } />
-              <Route path="/FirstStep/SecondStep" element={<HomeFirstStepSecondStep /> } />
-              <Route path="/FirstStep/SecondStep/ThirdStep" element={<HomeFirstStepSecondStepThirdStep /> } />
+              <Route path="FirstStep" element={<FirstStep /> } />
+              <Route path="SecondStep" element={<SecondStep /> } />
+              <Route path="ThirdStep" element={<ThirdStep /> } />
         </Route>
         <Route Component={Layout2}>
             <Route path="CreateAccount" element={<CreateAccount /> } />
