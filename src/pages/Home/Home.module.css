@@ -1,8 +1,7 @@
-.Page404 {
+.home {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem;
     align-items: center;
 }
 
@@ -10,10 +9,7 @@
     width: 15rem;
 }
 
-h1 {
-    font-size: 3.5rem;
-}
-
-p {
-    font-size: 2rem;
+.title {
+    font-size: 3rem;
+    text-align: center;
 }
