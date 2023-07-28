@@ -1,0 +1,22 @@
+.btn{
+    background-color: var(--main-color);
+    display: inline-block;
+    width: 25rem;
+    height: 2rem;
+    background-color: rgb(175, 111, 32);
+    color: gray;
+    font-weight: 700;
+    margin: 2rem 0 2rem 0;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border: none;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: brown;
+}
