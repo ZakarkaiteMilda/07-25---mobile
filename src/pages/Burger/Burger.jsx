@@ -2,15 +2,15 @@ import { Link } from 'react-router-dom';
 import style from './Burger.module.css';
 import { Button } from "../../components/Button/Button";
 import { CloseIcon } from "../../components/CloseIcon/CloseIcon";
-import { TbWritingSignOff } from 'react-icons/tb';
+
+import { TbWritingSignOff, TbBrandProducthunt } from 'react-icons/tb';
 import { CiSettings } from 'react-icons/ci';
 import { RiAccountCircleLine } from 'react-icons/ri';
-import { BsShop } from 'react-icons/bs';
-import { TbBrandProducthunt  } from 'react-icons/tb';
-import { FiCreditCard  } from 'react-icons/fi';
+import { BsShop, BsCreditCard2Back } from 'react-icons/bs';
+import { FiCreditCard, FiBook  } from 'react-icons/fi';
 import { GiShop  } from 'react-icons/gi';
-import { FiBook } from 'react-icons/fi';
-import { BsCreditCard2Back } from 'react-icons/bs';
+
+
 
 export function Burger() {
     return (
