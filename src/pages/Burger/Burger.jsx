@@ -59,8 +59,6 @@ export function Burger() {
                 
             </div>
 
-          
-            <br />
             <Link className={style.link} to='/'><Button text='Log out' /></Link>
         </div>
     );
