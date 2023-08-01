@@ -10,7 +10,6 @@ export function Home() {
         <div className={style.home}>
             <img className={style.logo} src={logo} alt="Img logo" />
             <h1 className={style.title}>KAYAK shopping platform</h1>
-            <br />
             <Link className={style.link} to='/FirstStep'><Button text='Get started' /></Link>
         </div>
     );

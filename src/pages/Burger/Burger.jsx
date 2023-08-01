@@ -7,7 +7,7 @@ import { TbWritingSignOff, TbBrandProducthunt } from 'react-icons/tb';
 import { CiSettings } from 'react-icons/ci';
 import { RiAccountCircleLine } from 'react-icons/ri';
 import { BsShop, BsCreditCard2Back } from 'react-icons/bs';
-import { FiCreditCard, FiBook  } from 'react-icons/fi';
+import { FiCreditCard, FiBookOpen  } from 'react-icons/fi';
 import { GiShop  } from 'react-icons/gi';
 
 
@@ -23,7 +23,7 @@ export function Burger() {
                     <p className={style.title}>Shopping cards</p>    
                 </div>
                 <div className={style.row}>
-                    <FiBook className={style.icon}  size='2rem' color='brown'/>
+                    <FiBookOpen className={style.icon}  size='2rem' color='brown'/>
                     <p className={style.title}>Product catalog</p>    
                 </div>
                 <div className={style.row}>
