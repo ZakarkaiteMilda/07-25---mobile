@@ -7,7 +7,7 @@ export function TermsService() {
         <div>
             TERMSSERVICE CONTENT
             <br />
-            <Link className={style.link} to='/CreateAccount'><Button text='Back' /></Link>
+            <Link className={style.link} to='/Register'><Button text='Back' /></Link>
         </div>
     );
 }

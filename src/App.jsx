@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { useState } from 'react';
 import style from './App.module.css';
 import { Burger } from "./pages/Burger/Burger";
-import { CreateAccount } from "./pages/CreateAccount/CreateAccount";
+import { Register } from "./pages/Register/Register";
 import { Home } from "./pages/Home/Home";
 import { FirstStep } from "./pages/Features/FirstStep";
 import { SecondStep } from "./pages/Features/SecondStep";
@@ -43,7 +43,7 @@ function App() {
               <Route path="ThirdStep" element={<ThirdStep /> } />
         </Route>
         <Route Component={Layout2}>
-            <Route path="CreateAccount" element={<CreateAccount /> } />
+            <Route path="Register" element={<Register /> } />
             <Route path="LogIn" element={<LogIn /> } />
             <Route path="TermsService" element={<TermsService /> } />
         </Route>

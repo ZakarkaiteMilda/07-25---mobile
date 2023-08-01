@@ -7,9 +7,11 @@ export function LogIn() {
         <div>
             LOGIN CONTENT
             <br />
+
+            
             <Link className={style.link} to='/Page'><Button text='Log In' /></Link>
             <br />
-            <Link className={style.link} to='/CreateAccount'><Button text='Register' /></Link>
+            <Link className={style.link} to='/Register'><Button text='Register' /></Link>
         </div>
     );
 }

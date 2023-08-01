@@ -8,7 +8,7 @@ export function Page404() {
         <div className={style.Page404}>
             <img className={style.Img404} src={Img404} alt="404 Img" />
             <p className={style.title}>Page not found</p>
-            <Link className={style.link} to='/FirstStep'><Button text='Go home' /></Link>
+            <Link className={style.link} to='/'><Button text='Go home' /></Link>
         </div>
     );
 }
