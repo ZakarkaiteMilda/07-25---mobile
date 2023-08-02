@@ -5,6 +5,13 @@ import { CloseIcon } from "../../components/CloseIcon/CloseIcon";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import { TbWritingSignOff, TbBrandProducthunt } from 'react-icons/tb';
+import { CiSettings } from 'react-icons/ci';
+import { RiAccountCircleLine } from 'react-icons/ri';
+import { BsShop, BsCreditCard2Back } from 'react-icons/bs';
+import { FiCreditCard, FiBookOpen  } from 'react-icons/fi';
+import { GiShop  } from 'react-icons/gi';
+
 export function Header3() {
     const [menuVisibility, setMenuVisibility] = useState(false);
 
@@ -12,22 +19,22 @@ export function Header3() {
         {
             type: 'link',
             id: 'm11',
-            icon: <GiHamburgerMenu className={style.linkIcon} size='1.5rem' />,
-            title: 'Link 1',
+            icon: <BsCreditCard2Back className={style.linkIcon} size='1.5rem' />,
+            title: 'Shopping cards',
             url: '/tasks',
         },
         {
             type: 'link',
             id: 'm12',
-            icon: <GiHamburgerMenu className={style.linkIcon} size='1.5rem' />,
-            title: 'Link 2',
+            icon: <FiBookOpen className={style.linkIcon} size='1.5rem' />,
+            title: 'Product catalog',
             url: '/tasks',
         },
         {
             type: 'link',
             id: 'm13',
-            icon: <GiHamburgerMenu className={style.linkIcon} size='1.5rem' />,
-            title: 'Link 3',
+            icon: <GiShop className={style.linkIcon} size='1.5rem' />,
+            title: 'Shops',
             url: '/tasks',
         },
         {
@@ -36,22 +43,22 @@ export function Header3() {
         {
             type: 'link',
             id: 'm21',
-            icon: <GiHamburgerMenu className={style.linkIcon} size='1.5rem' />,
-            title: 'Link 4',
+            icon: <FiCreditCard className={style.linkIcon} size='1.5rem' />,
+            title: 'New shopping card',
             url: '/tasks',
         },
         {
             type: 'link',
             id: 'm22',
-            icon: <GiHamburgerMenu className={style.linkIcon} size='1.5rem' />,
-            title: 'Link 5',
+            icon: <TbBrandProducthunt className={style.linkIcon} size='1.5rem' />,
+            title: 'New product',
             url: '/tasks',
         },
         {
             type: 'link',
             id: 'm23',
-            icon: <GiHamburgerMenu className={style.linkIcon} size='1.5rem' />,
-            title: 'Link 6',
+            icon: <BsShop className={style.linkIcon} size='1.5rem' />,
+            title: 'New shop',
             url: '/tasks',
         },
         {
@@ -60,22 +67,22 @@ export function Header3() {
         {
             type: 'link',
             id: 'm31',
-            icon: <GiHamburgerMenu className={style.linkIcon} size='1.5rem' />,
-            title: 'Link 7',
+            icon: <RiAccountCircleLine  className={style.linkIcon} size='1.5rem' />,
+            title: 'Account',
             url: '/tasks',
         },
         {
             type: 'link',
             id: 'm32',
-            icon: <GiHamburgerMenu className={style.linkIcon} size='1.5rem' />,
-            title: 'Link 8',
+            icon: <CiSettings className={style.linkIcon} size='1.5rem' />,
+            title: 'Settings',
             url: '/tasks',
         },
         {
             type: 'link',
             id: 'm33',
-            icon: <GiHamburgerMenu className={style.linkIcon} size='1.5rem' />,
-            title: 'Link 9',
+            icon: <TbWritingSignOff className={style.linkIcon} size='1.5rem' />,
+            title: 'Sign out',
             url: '/tasks',
         },
     ];
