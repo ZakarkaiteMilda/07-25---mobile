@@ -1,9 +1,10 @@
 import style from './Header3.module.css';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import img from '../../assets/img/logo.jpg';
+
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { CloseIcon } from "../../components/CloseIcon/CloseIcon";
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import { TbWritingSignOff, TbBrandProducthunt } from 'react-icons/tb';
 import { CiSettings } from 'react-icons/ci';
@@ -118,14 +119,7 @@ export function Header3() {
                 </nav>
             </div>
         )}
-        {/* <GiHamburgerMenu onClick={updateMenuVisibility} className={style.menuIcon} size='2.5rem' /> */}
         <GiHamburgerMenu onClick={updateMenuVisibility} className={style.burger}  size='4rem' color='brown'/>
     </header>
-            // <header>
-                
-                
-            //      {/* <img className={style.img} src={img} alt="Logo img" />
-            //      <GiHamburgerMenu className={style.burger}  size='4rem' color='brown'/> */}
-            // </header>
     );
 }

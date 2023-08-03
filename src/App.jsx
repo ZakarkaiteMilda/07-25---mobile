@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import logo from './logo.svg';
 // import { useState } from 'react';
 import style from './App.module.css';
-import { Burger } from "./pages/Burger/Burger";
 import { Register } from "./pages/Register/Register";
 import { Home } from "./pages/Home/Home";
 import { FirstStep } from "./pages/Features/FirstStep";
@@ -50,7 +49,6 @@ function App() {
         <Route Component={Layout3}>
             <Route path="Page" element={<Page /> } /> 
         </Route>
-        <Route path="Burger" element={<Burger /> } />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>

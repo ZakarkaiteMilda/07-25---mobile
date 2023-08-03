@@ -8,7 +8,7 @@ export function Page() {
         <div>
 
             <br />
-            <Link className={style.link} to='/Burger'><Button text='BurgerIcon' /></Link>
+            <Link className={style.link} to='/'><Button text='Log out' /></Link>
         </div>
     );
 }
